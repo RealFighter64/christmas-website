@@ -1,0 +1,15 @@
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <h1 class="display-3">Want to read a christmas story?</h1>
+        <p class="lead">Then this is the site for you!</p>
+        <p class="lead">
+            <div class="dropdown">
+                <button class="btn btn-primary btn-lg dropdown-toggle" id="dropdownMenuButton" type="button" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">Click to pick a story!</button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" ng-href="#/story/{{$index}}" ng-repeat="story in stories">{{story.title}}</a>
+                </div>
+            </div>
+        </p>
+    </div>
+</div>
